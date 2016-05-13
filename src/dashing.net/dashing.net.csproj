@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -167,9 +168,19 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="Assets\fontawesome-webfont.svg" />
     <Content Include="Assets\logo.png" />
     <Content Include="Assets\favicon.ico" />
+    <Content Include="libs\bower\es5-shim\es5-sham.js" />
+    <Content Include="libs\bower\es5-shim\es5-sham.min.js" />
+    <Content Include="libs\bower\es5-shim\es5-shim.js" />
+    <Content Include="libs\bower\es5-shim\es5-shim.min.js" />
+    <Content Include="libs\bower\font-awesome\css\font-awesome.css" />
+    <Content Include="libs\bower\font-awesome\css\font-awesome.min.css" />
+    <Content Include="libs\bower\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="libs\bower\jquery\dist\jquery.js" />
+    <Content Include="libs\bower\jquery\dist\jquery.min.js" />
+    <Content Include="libs\bower\jquery\dist\jquery.slim.js" />
+    <Content Include="libs\bower\jquery\dist\jquery.slim.min.js" />
     <Content Include="Scripts\batman.jquery.js" />
     <Content Include="Scripts\batman.js" />
     <Content Include="Scripts\d3.v2.min.js" />
@@ -177,12 +188,8 @@
     <Content Include="Scripts\jquery.knob.js" />
     <Content Include="Scripts\gridster\jquery.leanModal.min.js" />
     <Content Include="Scripts\rickshaw.min.js" />
-    <Content Include="Assets\stylesheets\font-awesome.css" />
     <Content Include="Assets\stylesheets\jquery.gridster.css" />
     <Content Include="Global.asax" />
-    <Content Include="Assets\fontawesome-webfont.eot" />
-    <Content Include="Assets\fontawesome-webfont.ttf" />
-    <Content Include="Assets\fontawesome-webfont.woff" />
     <Content Include="Scripts\dashing.coffee" />
     <Content Include="Views\Error\404.html" />
     <Content Include="Widgets\clock\clock.html" />
@@ -194,11 +201,18 @@
     <Content Include="Widgets\meter\meter.html" />
     <Content Include="Widgets\number\number.html" />
     <Content Include="Widgets\text\text.html" />
-    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
-    <Content Include="Scripts\es5-shim.js" />
-    <Content Include="Scripts\es5-shim.min.js" />
-    <Content Include="Scripts\jquery-1.9.1.js" />
-    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include=".bowerrc" />
+    <Content Include="bower.json" />
+    <Content Include="libs\bower\jquery\dist\jquery.min.map" />
+    <Content Include="libs\bower\jquery\dist\jquery.slim.min.map" />
+    <Content Include="libs\bower\es5-shim\es5-sham.map" />
+    <Content Include="libs\bower\es5-shim\es5-shim.map" />
+    <Content Include="libs\bower\font-awesome\css\font-awesome.css.map" />
+    <Content Include="libs\bower\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="libs\bower\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="libs\bower\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="libs\bower\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="libs\bower\font-awesome\fonts\FontAwesome.otf" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -209,7 +223,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Widgets\meter\meter.coffee" />
     <Content Include="Widgets\meter\meter.scss" />
     <Content Include="Widgets\clock\clock.coffee" />

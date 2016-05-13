@@ -12,8 +12,8 @@ namespace dashing.net.App_Start
         public static void RegisterBundles(BundleCollection bundles)
         {
             var application = new ScriptBundle("~/bundles/application-js")
-                .Include("~/Scripts/jquery-1.9.1.js")
-                .Include("~/Scripts/es5-shim.js")
+                .Include("~/libs/bower/jquery/dist/jquery.js")
+                .Include("~/libs/bower/es5-shim/es5-shim.js")
                 .Include("~/Scripts/batman.js")
                 .Include("~/Scripts/batman.jquery.js")
                 .Include("~/Scripts/dashing.coffee")
@@ -30,7 +30,7 @@ namespace dashing.net.App_Start
             bundles.Add(application);
 
             var styles = new Bundle("~/bundles/application-css")
-                .Include("~/Assets/stylesheets/font-awesome.css")
+                .Include("~/libs/bower/font-awesome/css/font-awesome.css")
                 .Include("~/Assets/stylesheets/jquery.gridster.css")
                 .IncludeDirectory("~/Widgets", "*.scss", true)
                 .Include("~/Assets/stylesheets/application.scss");
